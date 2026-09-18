@@ -41,7 +41,7 @@ void loop()
 
 void Temperatura()
 {
-  int Temp = digitalRead(SensorTemp);
+  int Temp = analogRead(SensorTemp);
   int Grados = map(Temp, 0, 1024, 0, 100);
   
   
